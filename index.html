@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>3D-печать, сканирование и моделирование в Минске</title>
-  <meta name="description" content="3D-печать на заказ в Минске: печать по вашей модели, 3D-сканирование, моделирование. Доставка почтой по всей Беларуси.">
+  <title>3D-JET.by — 3D-печать, сканирование и моделирование в Минске</title>
+  <meta name="description" content="3D-JET.by — 3D-печать на заказ в Минске: печать по вашей модели, 3D-сканирование, моделирование. Доставка почтой по всей Беларуси.">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -12,9 +12,10 @@
   <!-- Шапка -->
   <header class="header" id="header">
     <div class="container header__inner">
-      <a href="#" class="logo">3D<span>Мастерская</span></a>
+      <a href="#" class="logo">3D-JET<span>.by</span></a>
       <nav class="nav" id="nav">
         <a href="#services" class="nav__link">Услуги</a>
+        <a href="#materials" class="nav__link">Материалы</a>
         <a href="#benefits" class="nav__link">Как работаем</a>
         <a href="#pricing" class="nav__link">Цены</a>
         <a href="#contact" class="nav__link">Контакты</a>
@@ -98,8 +99,77 @@
     </div>
   </section>
 
+  <!-- Материалы -->
+  <section class="section section--alt" id="materials">
+    <div class="container">
+      <h2 class="section__title">Какой пластик выбрать?</h2>
+      <p class="section__subtitle">
+        Коротко о материалах, которыми мы печатаем. Не уверены —
+        напишите, для чего нужна деталь, и мы подберём материал сами.
+      </p>
+      <div class="grid grid--4">
+        <article class="material">
+          <div class="material__head">
+            <span class="material__dot material__dot--pla"></span>
+            <h3 class="material__name">PLA</h3>
+          </div>
+          <p class="material__tagline">Универсальный и самый популярный</p>
+          <ul class="material__list">
+            <li class="is-yes">Декор, сувениры, игрушки, макеты</li>
+            <li class="is-yes">Прототипы и модели с мелкими деталями</li>
+            <li class="is-yes">Самый большой выбор цветов</li>
+            <li class="is-no">Боится жары: деформируется от ~60 °C (авто на солнце, кипяток)</li>
+          </ul>
+        </article>
+        <article class="material">
+          <div class="material__head">
+            <span class="material__dot material__dot--petg"></span>
+            <h3 class="material__name">PETG</h3>
+          </div>
+          <p class="material__tagline">Прочный, для функциональных деталей</p>
+          <ul class="material__list">
+            <li class="is-yes">Крепления, кронштейны, держатели</li>
+            <li class="is-yes">Детали для улицы и влажных мест</li>
+            <li class="is-yes">Слегка упругий — не трескается при нагрузке</li>
+            <li class="is-no">Мелкие детали получаются чуть менее чёткими, чем из PLA</li>
+          </ul>
+        </article>
+        <article class="material">
+          <div class="material__head">
+            <span class="material__dot material__dot--abs"></span>
+            <h3 class="material__name">ABS</h3>
+          </div>
+          <p class="material__tagline">Термостойкий, для техники</p>
+          <ul class="material__list">
+            <li class="is-yes">Корпуса и детали бытовой техники</li>
+            <li class="is-yes">Детали рядом с нагревом, салон авто</li>
+            <li class="is-yes">Хорошо шлифуется и обрабатывается</li>
+            <li class="is-no">Не подходит для очень крупных деталей — возможна усадка</li>
+          </ul>
+        </article>
+        <article class="material">
+          <div class="material__head">
+            <span class="material__dot material__dot--tpu"></span>
+            <h3 class="material__name">TPU (гибкий)</h3>
+          </div>
+          <p class="material__tagline">Резиноподобный, не ломается</p>
+          <ul class="material__list">
+            <li class="is-yes">Прокладки, уплотнители, заглушки</li>
+            <li class="is-yes">Чехлы, ножки, демпферы, колёсики</li>
+            <li class="is-yes">Гнётся и возвращает форму</li>
+            <li class="is-no">Не держит форму там, где нужна жёсткость</li>
+          </ul>
+        </article>
+      </div>
+      <p class="materials__note">
+        Нужен другой материал (нейлон, карбон, светящийся или прозрачный пластик)?
+        <a href="#contact">Напишите нам</a> — обсудим варианты.
+      </p>
+    </div>
+  </section>
+
   <!-- Как работаем -->
-  <section class="section section--alt" id="benefits">
+  <section class="section" id="benefits">
     <div class="container">
       <h2 class="section__title">Как мы работаем</h2>
       <p class="section__subtitle">Просто и без лишних шагов</p>
@@ -129,7 +199,7 @@
   </section>
 
   <!-- Цены -->
-  <section class="section" id="pricing">
+  <section class="section section--alt" id="pricing">
     <div class="container">
       <h2 class="section__title">Цены</h2>
       <p class="section__subtitle">Точная стоимость зависит от размера, материала и сложности — пришлите модель, посчитаем бесплатно</p>
@@ -158,7 +228,7 @@
         </div>
         <div class="price">
           <h3 class="price__name">3D-сканирование</h3>
-          <div class="price__value">от 25 BYN</div>
+          <div class="price__value">от 50 BYN</div>
           <ul class="price__list">
             <li>Сканирование предмета или детали</li>
             <li>Готовый файл модели (STL)</li>
@@ -171,7 +241,7 @@
   </section>
 
   <!-- Контакты / форма -->
-  <section class="section section--alt" id="contact">
+  <section class="section" id="contact">
     <div class="container contact">
       <div class="contact__info">
         <h2 class="section__title section__title--left">Заказать или задать вопрос</h2>
@@ -209,14 +279,15 @@
   <!-- Подвал -->
   <footer class="footer">
     <div class="container footer__inner">
-      <a href="#" class="logo logo--footer">3D<span>Мастерская</span></a>
+      <a href="#" class="logo logo--footer">3D-JET<span>.by</span></a>
       <nav class="footer__nav">
         <a href="#services">Услуги</a>
+        <a href="#materials">Материалы</a>
         <a href="#benefits">Как работаем</a>
         <a href="#pricing">Цены</a>
         <a href="#contact">Контакты</a>
       </nav>
-      <p class="footer__copy">© 2026 3DМастерская · Минск, Беларусь</p>
+      <p class="footer__copy">© 2026 3D-JET.by · Минск, Беларусь</p>
     </div>
   </footer>
 

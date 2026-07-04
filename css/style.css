@@ -340,6 +340,83 @@ img {
   font-size: 15px;
 }
 
+/* ===== Материалы ===== */
+.material {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 28px 24px;
+}
+
+.material__head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+
+.material__dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.material__dot--pla { background: #22c55e; }
+.material__dot--petg { background: #2563eb; }
+.material__dot--abs { background: #f59e0b; }
+.material__dot--tpu { background: #a855f7; }
+
+.material__name {
+  font-size: 20px;
+}
+
+.material__tagline {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+}
+
+.material__list {
+  list-style: none;
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+.material__list li {
+  position: relative;
+  padding: 6px 0 6px 24px;
+}
+
+.material__list li::before {
+  position: absolute;
+  left: 0;
+  font-weight: 700;
+}
+
+.material__list .is-yes::before {
+  content: "✓";
+  color: #16a34a;
+}
+
+.material__list .is-no::before {
+  content: "✗";
+  color: #dc2626;
+}
+
+.materials__note {
+  text-align: center;
+  color: var(--text-muted);
+  margin-top: 36px;
+  font-size: 15px;
+}
+
+.materials__note a {
+  color: var(--accent);
+  font-weight: 600;
+}
+
 /* ===== Преимущества ===== */
 .benefit__num {
   font-size: 15px;
