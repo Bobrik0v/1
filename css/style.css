@@ -300,11 +300,24 @@ img {
 
 /* ===== Карточки услуг ===== */
 .card {
+  position: relative;
   background: var(--bg);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 32px 28px;
   transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card__badge {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: #f59e0b;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 3px 12px;
+  border-radius: 999px;
 }
 
 .card:hover {
