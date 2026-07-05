@@ -15,13 +15,15 @@ nav.addEventListener('click', (e) => {
   }
 });
 
-// Форма заявки: простая проверка полей и сообщение об успехе.
-// Чтобы заявки реально отправлялись, подключите сервис вроде Formspree
-// или свой бэкенд в обработчике ниже.
+// Форма заявки: отправка на почту через formsubmit.co
+const FORM_ENDPOINT = 'https://formsubmit.co/ajax/a0521167@gmail.com';
+
 const form = document.getElementById('contactForm');
 const success = document.getElementById('formSuccess');
+const errorMsg = document.getElementById('formError');
+const submitBtn = form.querySelector('button[type="submit"]');
 
-form.addEventListener('submit', (e) => {
+form.addEventListener('submit', async (e) => {
   e.preventDefault();
 
   let valid = true;
@@ -33,9 +35,36 @@ form.addEventListener('submit', (e) => {
 
   if (!valid) return;
 
-  success.hidden = false;
-  form.querySelectorAll('input, textarea').forEach((f) => (f.value = ''));
-  setTimeout(() => {
-    success.hidden = true;
-  }, 5000);
+  success.hidden = true;
+  errorMsg.hidden = true;
+  submitBtn.disabled = true;
+  submitBtn.textContent = 'Отправляем…';
+
+  try {
+    const res = await fetch(FORM_ENDPOINT, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json',
+      },
+      body: JSON.stringify({
+        'Имя': form.name.value.trim(),
+        'Телефон': form.phone.value.trim(),
+        'Сообщение': form.message.value.trim(),
+        _subject: 'Заявка с сайта 3D-JET.by',
+        _template: 'table',
+        _captcha: 'false',
+      }),
+    });
+
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+
+    success.hidden = false;
+    form.querySelectorAll('input, textarea').forEach((f) => (f.value = ''));
+  } catch (err) {
+    errorMsg.hidden = false;
+  } finally {
+    submitBtn.disabled = false;
+    submitBtn.textContent = 'Отправить заявку';
+  }
 });

@@ -797,6 +797,19 @@ section {
   font-weight: 700;
 }
 
+.form__error {
+  margin-top: 16px;
+  text-align: center;
+  color: #f87171;
+  font-weight: 700;
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: default;
+  transform: none;
+}
+
 /* ===== Подвал ===== */
 .footer {
   background: #04060c;
