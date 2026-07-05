@@ -15,6 +15,15 @@ nav.addEventListener('click', (e) => {
   }
 });
 
+// Аккордеон материалов: раскрытие карточки по клику
+document.querySelectorAll('.material__head').forEach((head) => {
+  head.addEventListener('click', () => {
+    const card = head.closest('.material');
+    const open = card.classList.toggle('is-open');
+    head.setAttribute('aria-expanded', open);
+  });
+});
+
 // Форма заявки: отправка на почту через formsubmit.co
 const FORM_ENDPOINT = 'https://formsubmit.co/ajax/a0521167@gmail.com';
 

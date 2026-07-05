@@ -161,65 +161,164 @@
     <div class="container">
       <h2 class="section__title">Какой пластик выбрать?</h2>
       <p class="section__subtitle">
-        Коротко о материалах, которыми мы печатаем. Не уверены —
+        Нажмите на материал, чтобы раскрыть подробности. Не уверены —
         напишите, для чего нужна деталь, и мы подберём материал сами.
       </p>
-      <div class="grid grid--4">
+
+      <h3 class="materials__group">Базовые материалы</h3>
+      <div class="grid grid--4 materials__grid">
         <article class="material">
-          <div class="material__head">
+          <button class="material__head" type="button" aria-expanded="false">
             <span class="material__dot material__dot--pla"></span>
-            <h3 class="material__name">PLA</h3>
+            <span class="material__titles">
+              <span class="material__name">PLA</span>
+              <span class="material__tagline">Универсальный и самый популярный</span>
+            </span>
+            <span class="material__chevron" aria-hidden="true"></span>
+          </button>
+          <div class="material__body">
+            <ul class="material__list">
+              <li class="is-yes">Декор, сувениры, игрушки, макеты</li>
+              <li class="is-yes">Прототипы и модели с мелкими деталями</li>
+              <li class="is-yes">Самый большой выбор цветов</li>
+              <li class="is-no">Боится жары: деформируется от ~60 °C (авто на солнце, кипяток)</li>
+            </ul>
           </div>
-          <p class="material__tagline">Универсальный и самый популярный</p>
-          <ul class="material__list">
-            <li class="is-yes">Декор, сувениры, игрушки, макеты</li>
-            <li class="is-yes">Прототипы и модели с мелкими деталями</li>
-            <li class="is-yes">Самый большой выбор цветов</li>
-            <li class="is-no">Боится жары: деформируется от ~60 °C (авто на солнце, кипяток)</li>
-          </ul>
         </article>
         <article class="material">
-          <div class="material__head">
+          <button class="material__head" type="button" aria-expanded="false">
             <span class="material__dot material__dot--petg"></span>
-            <h3 class="material__name">PETG</h3>
+            <span class="material__titles">
+              <span class="material__name">PETG</span>
+              <span class="material__tagline">Прочный, для функциональных деталей</span>
+            </span>
+            <span class="material__chevron" aria-hidden="true"></span>
+          </button>
+          <div class="material__body">
+            <ul class="material__list">
+              <li class="is-yes">Крепления, кронштейны, держатели</li>
+              <li class="is-yes">Детали для улицы и влажных мест</li>
+              <li class="is-yes">Слегка упругий — не трескается при нагрузке</li>
+              <li class="is-no">Мелкие детали получаются чуть менее чёткими, чем из PLA</li>
+            </ul>
           </div>
-          <p class="material__tagline">Прочный, для функциональных деталей</p>
-          <ul class="material__list">
-            <li class="is-yes">Крепления, кронштейны, держатели</li>
-            <li class="is-yes">Детали для улицы и влажных мест</li>
-            <li class="is-yes">Слегка упругий — не трескается при нагрузке</li>
-            <li class="is-no">Мелкие детали получаются чуть менее чёткими, чем из PLA</li>
-          </ul>
         </article>
         <article class="material">
-          <div class="material__head">
+          <button class="material__head" type="button" aria-expanded="false">
             <span class="material__dot material__dot--abs"></span>
-            <h3 class="material__name">ABS</h3>
+            <span class="material__titles">
+              <span class="material__name">ABS</span>
+              <span class="material__tagline">Термостойкий, для техники</span>
+            </span>
+            <span class="material__chevron" aria-hidden="true"></span>
+          </button>
+          <div class="material__body">
+            <ul class="material__list">
+              <li class="is-yes">Корпуса и детали бытовой техники</li>
+              <li class="is-yes">Детали рядом с нагревом, салон авто</li>
+              <li class="is-yes">Хорошо шлифуется и обрабатывается</li>
+              <li class="is-no">Не подходит для очень крупных деталей — возможна усадка</li>
+            </ul>
           </div>
-          <p class="material__tagline">Термостойкий, для техники</p>
-          <ul class="material__list">
-            <li class="is-yes">Корпуса и детали бытовой техники</li>
-            <li class="is-yes">Детали рядом с нагревом, салон авто</li>
-            <li class="is-yes">Хорошо шлифуется и обрабатывается</li>
-            <li class="is-no">Не подходит для очень крупных деталей — возможна усадка</li>
-          </ul>
         </article>
         <article class="material">
-          <div class="material__head">
+          <button class="material__head" type="button" aria-expanded="false">
             <span class="material__dot material__dot--tpu"></span>
-            <h3 class="material__name">TPU (гибкий)</h3>
+            <span class="material__titles">
+              <span class="material__name">TPU (гибкий)</span>
+              <span class="material__tagline">Резиноподобный, не ломается</span>
+            </span>
+            <span class="material__chevron" aria-hidden="true"></span>
+          </button>
+          <div class="material__body">
+            <ul class="material__list">
+              <li class="is-yes">Прокладки, уплотнители, заглушки</li>
+              <li class="is-yes">Чехлы, ножки, демпферы, колёсики</li>
+              <li class="is-yes">Гнётся и возвращает форму</li>
+              <li class="is-no">Не держит форму там, где нужна жёсткость</li>
+            </ul>
           </div>
-          <p class="material__tagline">Резиноподобный, не ломается</p>
-          <ul class="material__list">
-            <li class="is-yes">Прокладки, уплотнители, заглушки</li>
-            <li class="is-yes">Чехлы, ножки, демпферы, колёсики</li>
-            <li class="is-yes">Гнётся и возвращает форму</li>
-            <li class="is-no">Не держит форму там, где нужна жёсткость</li>
-          </ul>
         </article>
       </div>
+
+      <h3 class="materials__group">Инженерные материалы</h3>
+      <div class="grid grid--4 materials__grid">
+        <article class="material">
+          <button class="material__head" type="button" aria-expanded="false">
+            <span class="material__dot material__dot--pa"></span>
+            <span class="material__titles">
+              <span class="material__name">PA (нейлон)</span>
+              <span class="material__tagline">Износостойкий, для механики</span>
+            </span>
+            <span class="material__chevron" aria-hidden="true"></span>
+          </button>
+          <div class="material__body">
+            <ul class="material__list">
+              <li class="is-yes">Шестерни, втулки, петли, защёлки</li>
+              <li class="is-yes">Детали, работающие на трение и удар</li>
+              <li class="is-yes">Выдерживает многократные изгибы</li>
+              <li class="is-no">Впитывает влагу — не лучший выбор для постоянно мокрых мест</li>
+            </ul>
+          </div>
+        </article>
+        <article class="material">
+          <button class="material__head" type="button" aria-expanded="false">
+            <span class="material__dot material__dot--cf"></span>
+            <span class="material__titles">
+              <span class="material__name">PA-CF / PETG-CF</span>
+              <span class="material__tagline">С углеволокном: жёсткий и лёгкий</span>
+            </span>
+            <span class="material__chevron" aria-hidden="true"></span>
+          </button>
+          <div class="material__body">
+            <ul class="material__list">
+              <li class="is-yes">Кронштейны и детали дронов, авто, велосипедов</li>
+              <li class="is-yes">Максимальная жёсткость при малом весе</li>
+              <li class="is-yes">Красивая матовая поверхность</li>
+              <li class="is-no">Дороже обычных пластиков</li>
+            </ul>
+          </div>
+        </article>
+        <article class="material">
+          <button class="material__head" type="button" aria-expanded="false">
+            <span class="material__dot material__dot--pc"></span>
+            <span class="material__titles">
+              <span class="material__name">PC (поликарбонат)</span>
+              <span class="material__tagline">Ударопрочный и термостойкий</span>
+            </span>
+            <span class="material__chevron" aria-hidden="true"></span>
+          </button>
+          <div class="material__body">
+            <ul class="material__list">
+              <li class="is-yes">Детали под серьёзной нагрузкой</li>
+              <li class="is-yes">Держит нагрев до ~110 °C</li>
+              <li class="is-yes">Есть полупрозрачные варианты</li>
+              <li class="is-no">Сложнее в печати — сроки и цена выше</li>
+            </ul>
+          </div>
+        </article>
+        <article class="material">
+          <button class="material__head" type="button" aria-expanded="false">
+            <span class="material__dot material__dot--asa"></span>
+            <span class="material__titles">
+              <span class="material__name">ASA</span>
+              <span class="material__tagline">Как ABS, но для улицы</span>
+            </span>
+            <span class="material__chevron" aria-hidden="true"></span>
+          </button>
+          <div class="material__body">
+            <ul class="material__list">
+              <li class="is-yes">Уличные крепления, детали фасадов</li>
+              <li class="is-yes">Наружные автодетали</li>
+              <li class="is-yes">Не выцветает и не трескается на солнце (УФ-стойкий)</li>
+              <li class="is-no">Чуть дороже ABS</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+
       <p class="materials__note">
-        Нужен другой материал (нейлон, карбон, светящийся или прозрачный пластик)?
+        Нужно что-то особенное — светящийся, прозрачный пластик, шёлковый PLA?
         <a href="#contact">Напишите нам</a> — обсудим варианты.
       </p>
     </div>

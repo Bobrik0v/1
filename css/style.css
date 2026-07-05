@@ -513,25 +513,49 @@ section {
   font-weight: 700;
 }
 
-/* ===== Материалы ===== */
+/* ===== Материалы (аккордеон) ===== */
+.materials__group {
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin: 34px 0 14px;
+}
+
+.materials__group:first-of-type {
+  margin-top: 0;
+}
+
+.materials__grid {
+  gap: 14px;
+  align-items: start;
+}
+
 .material {
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  padding: 28px 24px;
-  transition: transform 0.2s, border-color 0.2s;
+  overflow: hidden;
+  transition: border-color 0.2s;
 }
 
 .material:hover {
-  transform: translateY(-5px);
   border-color: rgba(124, 140, 255, 0.45);
 }
 
 .material__head {
   display: flex;
   align-items: center;
-  gap: 10px;
-  margin-bottom: 6px;
+  gap: 12px;
+  width: 100%;
+  padding: 18px 18px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  color: var(--text);
+  text-align: left;
 }
 
 .material__dot {
@@ -546,23 +570,63 @@ section {
 .material__dot--petg { background: #60a5fa; color: #60a5fa; }
 .material__dot--abs { background: #fbbf24; color: #fbbf24; }
 .material__dot--tpu { background: #c084fc; color: #c084fc; }
+.material__dot--pa { background: #22d3ee; color: #22d3ee; }
+.material__dot--cf { background: #94a3b8; color: #94a3b8; }
+.material__dot--pc { background: #fb7185; color: #fb7185; }
+.material__dot--asa { background: #a3e635; color: #a3e635; }
+
+.material__titles {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
 
 .material__name {
-  font-size: 19px;
+  font-size: 17px;
   font-weight: 800;
 }
 
 .material__tagline {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 600;
   color: var(--text-muted);
-  margin-bottom: 16px;
+}
+
+.material__chevron {
+  margin-left: auto;
+  flex-shrink: 0;
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid var(--text-muted);
+  border-bottom: 2px solid var(--text-muted);
+  transform: rotate(45deg);
+  transition: transform 0.2s;
+}
+
+.material.is-open .material__chevron {
+  transform: rotate(-135deg);
+}
+
+.material__body {
+  display: none;
+  padding: 0 18px 18px;
+}
+
+.material.is-open .material__body {
+  display: block;
+}
+
+.material.is-open {
+  border-color: rgba(124, 140, 255, 0.45);
 }
 
 .material__list {
   list-style: none;
   font-size: 14px;
   color: var(--text-muted);
+  border-top: 1px solid var(--border);
+  padding-top: 10px;
 }
 
 .material__list li {
