@@ -834,6 +834,16 @@ section {
   color: #5b6478;
 }
 
+.footer__tg {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.footer__tg:hover {
+  text-decoration: underline;
+}
+
 /* ===== Адаптивность ===== */
 @media (max-width: 900px) {
   .hero__inner {
