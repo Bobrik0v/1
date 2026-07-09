@@ -447,7 +447,7 @@
           <li>📍 Минск · доставка почтой по всей Беларуси</li>
         </ul>
       </div>
-      <form class="form" id="contactForm" novalidate>
+      <form class="form" id="contactForm" action="https://formsubmit.co/a0521167@gmail.com" method="POST" novalidate>
         <div class="form__group">
           <label for="name">Ваше имя</label>
           <input type="text" id="name" name="name" placeholder="Иван" required>
@@ -460,10 +460,13 @@
           <label for="message">Что нужно сделать?</label>
           <textarea id="message" name="message" rows="4" placeholder="Например: напечатать шестерёнку для кухонного комбайна, модели нет — есть сломанная деталь"></textarea>
         </div>
+        <input type="hidden" name="_subject" value="Заявка с сайта 3D-JET.by">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://3d-jet.by/?sent=1">
         <button type="submit" class="btn btn--block">Отправить заявку</button>
         <p class="form__note">Нажимая кнопку, вы соглашаетесь с обработкой персональных данных.</p>
         <p class="form__success" id="formSuccess" hidden>✓ Спасибо! Ваша заявка отправлена — свяжемся с вами в ближайшее время.</p>
-        <p class="form__error" id="formError" hidden>Не получилось отправить. Позвоните нам или напишите в Telegram — ссылки слева.</p>
       </form>
     </div>
   </section>
