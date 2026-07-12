@@ -1006,16 +1006,30 @@ section {
   }
 }
 
-/* Галерея работ — автозапчасти */
+/* Галерея работ — автозапчасти (горизонтальная прокрутка) */
 .auto-gallery {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 22px;
-  max-width: 760px;
-  margin: 40px auto 0;
+  display: flex;
+  gap: 18px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  margin: 40px 0 0;
+  padding-bottom: 14px;
+  scrollbar-width: thin;
+  scrollbar-color: var(--border) transparent;
+}
+.auto-gallery::-webkit-scrollbar {
+  height: 8px;
+}
+.auto-gallery::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 8px;
 }
 .auto-photo {
+  flex: 0 0 auto;
+  width: min(72%, 280px);
   margin: 0;
+  scroll-snap-align: center;
 }
 .auto-photo img {
   width: 100%;
@@ -1030,12 +1044,6 @@ section {
   line-height: 1.5;
   color: var(--text-muted);
   text-align: center;
-}
-@media (max-width: 600px) {
-  .auto-gallery {
-    grid-template-columns: 1fr;
-    gap: 26px;
-  }
 }
 
 /* Частые вопросы (FAQ) */
