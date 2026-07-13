@@ -21,7 +21,7 @@
 - Канонический домен — `https://3d-jet.by/` (не bobrik0v.github.io); он же в canonical, og:url, Schema.org, robots.txt и sitemap.xml
 - При изменении контента обновлять `<lastmod>` в `sitemap.xml`
 - Форма заявок шлёт письма через Web3Forms на a0521167@gmail.com (access_key в скрытом поле формы в `index.html`, отправка в `js/main.js`) — не ломать поля name/phone/message. FormSubmit не использовать — сервис лежал (ошибка 522), из-за него терялись заявки
-- Контакты: +375 (25) 972-57-91, Telegram https://t.me/+R_bnydGzJq0xODdi, a0521167@gmail.com
+- Контакты: +375 (25) 972-57-91, Telegram https://t.me/djetby, a0521167@gmail.com
 - Реквизиты в подвале: ИП Довгалёв Андрей Николаевич, УНП 491761660 — не удалять
 - Оборудование: Bambu Lab X1 Carbon, Bambu Lab H2D, сканер Creality Raptor Pro
 - Цены «от»: печать от 10 BYN, моделирование+печать от 30 BYN, сканирование от 50 BYN
