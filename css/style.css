@@ -1092,3 +1092,109 @@ section {
   color: var(--text-muted);
   line-height: 1.65;
 }
+
+/* ===== Товары (каталог из js/products.js) ===== */
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 340px));
+  justify-content: center;
+  gap: 22px;
+}
+.product {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: transform 0.2s, border-color 0.2s;
+}
+.product:hover {
+  transform: translateY(-5px);
+  border-color: rgba(124, 140, 255, 0.45);
+}
+.product__badge {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  z-index: 1;
+  background: linear-gradient(120deg, #e9b950, #d99a2b);
+  color: #241a05;
+  font-size: 12px;
+  font-weight: 800;
+  padding: 3px 12px;
+  border-radius: 999px;
+}
+.product__photo {
+  aspect-ratio: 4 / 3;
+  background: rgba(255, 255, 255, 0.03);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.product__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.product__nophoto {
+  font-size: 48px;
+  opacity: 0.5;
+}
+.product__body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 22px 22px 24px;
+}
+.product__name {
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+.product__desc {
+  color: var(--text-muted);
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+.product__specs {
+  list-style: none;
+  margin-bottom: 14px;
+  flex-grow: 1;
+}
+.product__specs li {
+  color: var(--text-muted);
+  font-size: 14px;
+  padding: 5px 0 5px 18px;
+  position: relative;
+  border-bottom: 1px solid var(--border);
+}
+.product__specs li::before {
+  content: "•";
+  position: absolute;
+  left: 4px;
+  color: var(--accent);
+}
+.product__price {
+  font-family: var(--font-head);
+  font-size: 22px;
+  font-weight: 700;
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin: 6px 0 16px;
+}
+.product__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.products__empty {
+  grid-column: 1 / -1;
+  text-align: center;
+  color: var(--text-muted);
+}
