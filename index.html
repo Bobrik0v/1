@@ -123,8 +123,8 @@
       <a href="#" class="logo">3D-JET<span>.by</span></a>
       <nav class="nav" id="nav">
         <a href="#services" class="nav__link">Услуги</a>
+        <a href="#shop" class="nav__link">Товары</a>
         <a href="#auto" class="nav__link">Автозапчасти</a>
-        <a href="#equipment" class="nav__link">Оборудование</a>
         <a href="#materials" class="nav__link">Материалы</a>
         <a href="#pricing" class="nav__link">Цены</a>
         <a href="#contact" class="nav__link">Контакты</a>
@@ -204,6 +204,20 @@
             недостающих и сломанных деталей, которые уже не купить.
           </p>
         </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Товары (карточки берутся из js/products.js) -->
+  <section class="section section--alt" id="shop">
+    <div class="container">
+      <h2 class="section__title">Готовые изделия</h2>
+      <p class="section__subtitle">
+        Изделия, которые мы уже делали и можем повторить. Нажмите «Заказать» —
+        название подставится в заявку, мы уточним детали и сроки.
+      </p>
+      <div class="products" id="productsGrid">
+        <noscript><p class="products__empty">Для просмотра каталога включите JavaScript или <a href="#contact">напишите нам</a>.</p></noscript>
       </div>
     </div>
   </section>
@@ -769,6 +783,7 @@
       <a href="#" class="logo logo--footer">3D-JET<span>.by</span></a>
       <nav class="footer__nav">
         <a href="#services">Услуги</a>
+        <a href="#shop">Товары</a>
         <a href="#auto">Автозапчасти</a>
         <a href="#repair">Ремонт техники</a>
         <a href="#equipment">Оборудование</a>
@@ -789,6 +804,7 @@
     </div>
   </footer>
 
+  <script src="js/products.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
