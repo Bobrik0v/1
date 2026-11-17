@@ -386,6 +386,10 @@ section {
   grid-template-columns: repeat(4, 1fr);
 }
 
+.grid--2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
 /* ===== Карточки услуг ===== */
 .card {
   position: relative;
@@ -1247,4 +1251,59 @@ body.is-locked { overflow: hidden; }
   .pp__value--big { font-size: 24px; }
   .pp__value--ask { font-size: 14px; }
   .pcard__buy .btn { padding: 9px 8px; font-size: 14px; }
+}
+
+/* Ремонт техники */
+.repair-list {
+  list-style: none;
+  color: var(--text-muted);
+  font-size: 15px;
+}
+.repair-list li {
+  position: relative;
+  padding-left: 18px;
+  margin-bottom: 8px;
+}
+.repair-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+}
+.repair-list b {
+  color: var(--text);
+}
+.repair-not {
+  margin-top: 22px;
+  color: var(--text-muted);
+  font-size: 14px;
+  text-align: center;
+}
+.repair-subtitle {
+  font-family: var(--font-head);
+  font-size: 22px;
+  font-weight: 700;
+  margin: 56px 0 22px;
+  text-align: center;
+}
+.repair-case {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--radius);
+  padding: 22px 24px;
+}
+.repair-case h4 {
+  font-size: 16px;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+.repair-case p {
+  color: var(--text-muted);
+  font-size: 14px;
+}
+@media (max-width: 760px) {
+  .grid--2 {
+    grid-template-columns: 1fr;
+  }
 }
