@@ -201,7 +201,7 @@ window.PRODUCTS = [
     id: "derzhatel-gaykoverta-magnitnyy",
     name: "Магнитный держатель пневмогайковёрта для СТО",
     category: "Для мастерской",
-    photos: ["img/products/derzhatel-gaykoverta-magnitnyy/01.jpg", "img/products/derzhatel-gaykoverta-magnitnyy/02.jpg", "img/products/derzhatel-gaykoverta-magnitnyy/03.jpg", "img/products/derzhatel-gaykoverta-magnitnyy/04.jpg", "img/products/derzhatel-gaykoverta-magnitnyy/05.jpg"],
+    photos: ["img/products/derzhatel-gaykoverta-magnitnyy/01.jpg", "img/products/derzhatel-gaykoverta-magnitnyy/02.jpg", "img/products/derzhatel-gaykoverta-magnitnyy/03.jpg", "img/products/derzhatel-gaykoverta-magnitnyy/04.jpg", "img/products/derzhatel-gaykoverta-magnitnyy/05.jpg", "img/products/derzhatel-gaykoverta-magnitnyy/06.jpg", "img/products/derzhatel-gaykoverta-magnitnyy/07.jpg"],
     price: 70,
     oldPrice: null,
     priceFrom: false,
