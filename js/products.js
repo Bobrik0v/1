@@ -75,14 +75,14 @@ window.PRODUCTS = [
   },
   {
     id: "peugeot-605-ramka-magnitoly",
-    name: "Рамка магнитолы Peugeot 605",
+    name: "Переходная рамка магнитолы Peugeot 605 (1 DIN)",
     category: "Автозапчасти",
     photos: ["img/products/peugeot-605-ramka-magnitoly/01.jpg", "img/products/peugeot-605-ramka-magnitoly/02.jpg", "img/products/peugeot-605-ramka-magnitoly/03.jpg"],
     price: 40,
     oldPrice: null,
     priceFrom: false,
-    desc: "Рамка для установки магнитолы в Peugeot 605. Ставится на штатное место без доработок.",
-    specs: ["Автомобиль: Peugeot 605", "Изготовление: 3D-печать, под заказ 2–3 дня", "Артикул: PEG605RMK01"],
+    desc: "Переходная рамка, чтобы поставить в Peugeot 605 любую магнитолу размера 1 DIN. Закрывает щели вокруг магнитолы и держит её без люфта. Ставится своими руками за несколько минут, без доработок.",
+    specs: ["Автомобиль: Peugeot 605", "Под магнитолу: 1 DIN", "Изготовление: 3D-печать, под заказ 2–3 дня", "Артикул: PEG605RMK01"],
     badge: "Под заказ",
     ozon: "https://ozon.ru/product/5038456983"
   },
