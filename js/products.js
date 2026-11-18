@@ -116,11 +116,11 @@ window.PRODUCTS = [
     id: "bmw-e60-kreplenie-parktronika",
     name: "Крепление парктроника BMW E60, бампер M-пакет (789596)",
     category: "Автозапчасти",
-    photos: ["img/products/bmw-e60-kreplenie-parktronika/01.jpg", "img/products/bmw-e60-kreplenie-parktronika/02.jpg", "img/products/bmw-e60-kreplenie-parktronika/03.jpg", "img/products/bmw-e60-kreplenie-parktronika/04.jpg", "img/products/bmw-e60-kreplenie-parktronika/05.jpg", "img/products/bmw-e60-kreplenie-parktronika/06.jpg", "img/products/bmw-e60-kreplenie-parktronika/07.jpg", "img/products/bmw-e60-kreplenie-parktronika/08.jpg", "img/products/bmw-e60-kreplenie-parktronika/09.jpg"],
+    photos: ["img/products/bmw-e60-kreplenie-parktronika/01.jpg", "img/products/bmw-e60-kreplenie-parktronika/02.jpg", "img/products/bmw-e60-kreplenie-parktronika/03.jpg", "img/products/bmw-e60-kreplenie-parktronika/04.jpg", "img/products/bmw-e60-kreplenie-parktronika/05.jpg"],
     price: 20,
     oldPrice: null,
     priceFrom: false,
-    desc: "Крепление датчика парктроника для бампера M-пакета BMW E60. Держит датчик плотно, без люфта. Печатаем из ASA — прочный, не боится погоды. Ставится без доработок.",
+    desc: "Крепление датчика парктроника для бампера M-пакета BMW E60. Держит датчик плотно, без люфта. Печатаем из ASA — прочный, не боится погоды. Ставится без доработок. На последнем фото — датчик, установленный в бампер на нашем креплении.",
     specs: ["Автомобиль: BMW E60, бампер M-пакет", "OEM-номер: 789596", "Материал: ASA", "Количество: 1 шт.", "Изготовление: 3D-печать, под заказ 2–3 дня", "Артикул: 789596-BMW"],
     badge: "Под заказ",
     ozon: "https://ozon.ru/product/5613311432"
