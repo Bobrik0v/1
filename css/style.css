@@ -1307,3 +1307,33 @@ body.is-locked { overflow: hidden; }
     grid-template-columns: 1fr;
   }
 }
+
+/* Отправка фото в мессенджер */
+.photo-send {
+  margin-top: 28px;
+  padding: 20px 22px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+.contact__info .photo-send__title {
+  font-weight: 800;
+  color: var(--text);
+  margin: 0 0 6px;
+}
+.contact__info .photo-send__text {
+  font-size: 14px;
+  margin: 0 0 14px;
+}
+.photo-send__btns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.form__hint {
+  display: block;
+  font-weight: 400;
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-top: 2px;
+}

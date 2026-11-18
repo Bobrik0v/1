@@ -174,10 +174,10 @@
       foot.innerHTML = '';
       return;
     }
-    let total = 0, ask = 0;
+    let total = 0, ask = 0, from = false;
     items.innerHTML = ids.map((id) => {
       const p = byId[id];
-      if (hasPrice(p)) total += p.price * cart[id]; else ask++;
+      if (hasPrice(p)) { total += p.price * cart[id]; if (p.priceFrom) from = true; } else ask++;
       return `<div class="citem">
         <div class="citem__photo">${p.photos[0] ? `<img src="${esc(p.photos[0])}" alt="">` : '🧩'}</div>
         <div class="citem__info">
@@ -188,7 +188,8 @@
       </div>`;
     }).join('');
     foot.innerHTML = `
-      <div class="cart__total"><span>Итого (${count()} шт.)</span><b>${total ? num(total) + ' BYN' : '—'}</b></div>
+      <div class="cart__total"><span>${from || ask ? 'Предварительно' : 'Итого'} (${count()} шт.)</span><b>${total ? (from ? 'от ' : '') + num(total) + ' BYN' : '—'}</b></div>
+      ${from ? '<p class="cart__hint">Цена «от» — точную стоимость назовём после уточнения размеров и материала.</p>' : ''}
       ${ask ? '<p class="cart__hint">По позициям «цена по запросу» стоимость назовём после уточнения.</p>' : ''}
       <button type="button" class="btn btn--block" data-checkout>Оформить заказ</button>
       <button type="button" class="cart__clear" data-clear>Очистить корзину</button>`;
@@ -203,14 +204,14 @@
 
   function checkout() {
     const ids = Object.keys(cart); if (!ids.length) return;
-    let total = 0, ask = false;
+    let total = 0, ask = false, from = false;
     const lines = ids.map((id, i) => {
       const p = byId[id], q = cart[id];
-      if (hasPrice(p)) { total += p.price * q; return `${i + 1}. ${p.name} — ${q} шт. × ${p.priceFrom ? 'от ' : ''}${num(p.price)} BYN = ${num(p.price * q)} BYN`; }
+      if (hasPrice(p)) { total += p.price * q; if (p.priceFrom) from = true; return `${i + 1}. ${p.name} — ${q} шт. × ${p.priceFrom ? 'от ' : ''}${num(p.price)} BYN = ${p.priceFrom ? 'от ' : ''}${num(p.price * q)} BYN`; }
       ask = true; return `${i + 1}. ${p.name} — ${q} шт. (цена по запросу)`;
     });
     const text = 'Заказ из каталога:\n' + lines.join('\n')
-      + (total ? `\nИтого: ${num(total)} BYN${ask ? ' + позиции по запросу' : ''}` : '');
+      + (total ? `\n${from || ask ? 'Предварительно' : 'Итого'}: ${from ? 'от ' : ''}${num(total)} BYN${ask ? ' + позиции по запросу' : ''}` : '');
     const msg = document.getElementById('message');
     if (msg) {
       const rest = msg.value.replace(/Заказ из каталога:[\s\S]*?(?=\n\n|$)/, '').trim();
