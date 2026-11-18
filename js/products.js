@@ -139,5 +139,19 @@ window.PRODUCTS = [
     ozon: "https://ozon.ru/product/5145589427"
   },
 
+  {
+    id: "opel-vectra-b-reshetka",
+    name: "Решётка радиатора Opel Vectra B",
+    category: "Автозапчасти",
+    photos: ["img/products/opel-vectra-b-reshetka/01.jpg", "img/products/opel-vectra-b-reshetka/02.jpg", "img/products/opel-vectra-b-reshetka/03.jpg"],
+    price: null,
+    oldPrice: null,
+    priceFrom: false,
+    desc: "Решётка радиатора для Opel Vectra B — замена треснувшей или потерянной. Повторяет форму и крепления оригинала, ставится своими руками на штатное место. На первом фото — решётка, установленная на автомобиль.",
+    specs: ["Автомобиль: Opel Vectra B", "Изготовление: 3D-печать, под заказ", "Артикул: OPL-VECB-GRIL-01"],
+    badge: "Под заказ",
+    ozon: ""
+  },
+
   // ↑ новые товары добавлять выше этой строки
 ];
