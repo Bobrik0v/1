@@ -65,7 +65,7 @@ window.PRODUCTS = [
     name: "Решётка радиатора Volvo V70 (под покраску)",
     category: "Автозапчасти",
     photos: ["img/products/volvo-v70-reshetka/01.jpg", "img/products/volvo-v70-reshetka/02.jpg", "img/products/volvo-v70-reshetka/03.jpg"],
-    price: 499,
+    price: 170,
     oldPrice: null,
     priceFrom: false,
     desc: "Замена треснувшей или выцветшей решётки Volvo V70, которую сложно найти. Повторяет форму и крепления оригинала. Важно: деталь НЕ окрашена — поставляется в чёрном пластике, под покраску в цвет кузова или в чёрный мат/глянец. Перед покраской — лёгкая шлифовка и грунт по пластику.",
