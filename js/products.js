@@ -153,5 +153,19 @@ window.PRODUCTS = [
     ozon: ""
   },
 
+  {
+    id: "figurka-pudge",
+    name: "Фигурка Пудж, 23 см (под покраску)",
+    category: "Фигурки",
+    photos: ["img/products/figurka-pudge/01.jpg", "img/products/figurka-pudge/02.jpg", "img/products/figurka-pudge/03.jpg", "img/products/figurka-pudge/04.jpg"],
+    price: null,
+    oldPrice: null,
+    priceFrom: false,
+    desc: "Крупная фигурка Пуджа высотой около 23 см на круглой подставке. Напечатана на 3D-принтере, поставляется в белом пластике — можно покрасить самому или оставить как есть.",
+    specs: ["Высота: около 23 см", "Цвет: белый, без покраски", "Изготовление: 3D-печать, под заказ"],
+    badge: "Под заказ",
+    ozon: ""
+  },
+
   // ↑ новые товары добавлять выше этой строки
 ];
