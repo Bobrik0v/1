@@ -47,5 +47,99 @@
 
 window.PRODUCTS = [
 
+  {
+    id: "opel-vectra-b-vstavki-ruchek",
+    name: "Вставки ручек дверных карт Opel Vectra B, комплект",
+    category: "Автозапчасти",
+    photos: ["img/products/opel-vectra-b-vstavki-ruchek/01.jpg", "img/products/opel-vectra-b-vstavki-ruchek/02.jpg", "img/products/opel-vectra-b-vstavki-ruchek/03.jpg", "img/products/opel-vectra-b-vstavki-ruchek/04.jpg", "img/products/opel-vectra-b-vstavki-ruchek/05.jpg"],
+    price: 50,
+    oldPrice: null,
+    priceFrom: false,
+    desc: "Комплект вставок (заглушек) в дверные карты Opel Vectra B — замена сломанным или потерянным. Печатаем из ASA: не деформируется летом в салоне и не выцветает на солнце, матовая поверхность как у заводского пластика. Ставятся на штатные места без доработок.",
+    specs: ["Автомобиль: Opel Vectra B", "Материал: ASA", "Цвет: чёрный, матовый", "Изготовление: 3D-печать, под заказ 2–3 дня", "Артикул: OVB-HANDLE-INS-01"],
+    badge: "Под заказ",
+    ozon: ""
+  },
+  {
+    id: "volvo-v70-reshetka",
+    name: "Решётка радиатора Volvo V70 (под покраску)",
+    category: "Автозапчасти",
+    photos: ["img/products/volvo-v70-reshetka/01.jpg", "img/products/volvo-v70-reshetka/02.jpg", "img/products/volvo-v70-reshetka/03.jpg"],
+    price: 170,
+    oldPrice: null,
+    priceFrom: false,
+    desc: "Замена треснувшей или выцветшей решётки Volvo V70, которую сложно найти. Повторяет форму и крепления оригинала. Важно: деталь НЕ окрашена — поставляется в чёрном пластике, под покраску в цвет кузова или в чёрный мат/глянец. Перед покраской — лёгкая шлифовка и грунт по пластику.",
+    specs: ["Автомобиль: Volvo V70", "Покрытие: не окрашена, под покраску", "Вес: около 400 г", "Изготовление: 3D-печать, под заказ", "Артикул: VOLVO-V70-GR"],
+    badge: "Под заказ",
+    ozon: ""
+  },
+  {
+    id: "peugeot-605-ramka-magnitoly",
+    name: "Переходная рамка магнитолы Peugeot 605 (1 DIN)",
+    category: "Автозапчасти",
+    photos: ["img/products/peugeot-605-ramka-magnitoly/01.jpg", "img/products/peugeot-605-ramka-magnitoly/02.jpg", "img/products/peugeot-605-ramka-magnitoly/03.jpg"],
+    price: 40,
+    oldPrice: null,
+    priceFrom: false,
+    desc: "Переходная рамка, чтобы поставить в Peugeot 605 любую магнитолу размера 1 DIN. Закрывает щели вокруг магнитолы и держит её без люфта. Ставится своими руками за несколько минут, без доработок.",
+    specs: ["Автомобиль: Peugeot 605", "Под магнитолу: 1 DIN", "Изготовление: 3D-печать, под заказ 2–3 дня", "Артикул: PEG605RMK01"],
+    badge: "Под заказ",
+    ozon: ""
+  },
+  {
+    id: "audi-a8-d4-shesterna-pechki",
+    name: "Шестерня актуатора заслонки печки Audi A8 D4",
+    category: "Автозапчасти",
+    photos: ["img/products/audi-a8-d4-shesterna-pechki/01.jpg", "img/products/audi-a8-d4-shesterna-pechki/02.jpg"],
+    price: 20,
+    oldPrice: null,
+    priceFrom: false,
+    desc: "Шестерня сервопривода заслонки отопителя Audi A8 D4 (2015). Чинит заклинившую или щёлкающую печку без покупки сервопривода в сборе. Печатаем из PA-CF — полиамида с углеволокном: прочный, износостойкий, не боится жары в отопителе. На фото: слева — наша шестерня, справа — изношенная заводская. Перед заказом сравните вашу деталь с фото.",
+    specs: ["Автомобиль: Audi A8 D4 (2015)", "OEM-номер: 4H0820511", "Материал: PA-CF (полиамид с углеволокном)", "Изготовление: 3D-печать, под заказ 2–3 дня", "Артикул: GEAR-AUDI-A8D4-HTR"],
+    badge: "Под заказ",
+    ozon: ""
+  },
+  {
+    id: "bmw-e60-kreplenie-parktronika",
+    name: "Крепление парктроника BMW E60, бампер M-пакет (789596)",
+    category: "Автозапчасти",
+    photos: ["img/products/bmw-e60-kreplenie-parktronika/01.jpg", "img/products/bmw-e60-kreplenie-parktronika/02.jpg", "img/products/bmw-e60-kreplenie-parktronika/03.jpg", "img/products/bmw-e60-kreplenie-parktronika/04.jpg", "img/products/bmw-e60-kreplenie-parktronika/05.jpg"],
+    price: 20,
+    oldPrice: null,
+    priceFrom: false,
+    desc: "Крепление датчика парктроника для бампера M-пакета BMW E60. Держит датчик плотно, без люфта. Печатаем из ASA — прочный, не боится погоды. Ставится без доработок. На последнем фото — датчик, установленный в бампер на нашем креплении.",
+    specs: ["Автомобиль: BMW E60, бампер M-пакет", "OEM-номер: 789596", "Материал: ASA", "Количество: 1 шт.", "Изготовление: 3D-печать, под заказ 2–3 дня", "Артикул: 789596-BMW"],
+    badge: "Под заказ",
+    ozon: ""
+  },
+
+  {
+    id: "opel-vectra-b-reshetka",
+    name: "Решётка радиатора Opel Vectra B",
+    category: "Автозапчасти",
+    photos: ["img/products/opel-vectra-b-reshetka/01.jpg", "img/products/opel-vectra-b-reshetka/02.jpg", "img/products/opel-vectra-b-reshetka/03.jpg"],
+    price: 150,
+    oldPrice: null,
+    priceFrom: false,
+    desc: "Решётка радиатора для Opel Vectra B — замена треснувшей или потерянной. Повторяет форму и крепления оригинала, ставится своими руками на штатное место. На первом фото — решётка, установленная на автомобиль.",
+    specs: ["Автомобиль: Opel Vectra B", "Изготовление: 3D-печать, под заказ", "Артикул: OPL-VECB-GRIL-01"],
+    badge: "Под заказ",
+    ozon: ""
+  },
+
+  {
+    id: "figurka-pudge",
+    name: "Фигурка Пудж, 23 см (под покраску)",
+    category: "Фигурки",
+    photos: ["img/products/figurka-pudge/01.jpg", "img/products/figurka-pudge/02.jpg", "img/products/figurka-pudge/03.jpg", "img/products/figurka-pudge/04.jpg"],
+    price: 200,
+    oldPrice: null,
+    priceFrom: false,
+    desc: "Крупная фигурка Пуджа высотой около 23 см на круглой подставке. Напечатана на 3D-принтере, поставляется в белом пластике — можно покрасить самому или оставить как есть.",
+    specs: ["Высота: около 23 см", "Цвет: белый, без покраски", "Изготовление: 3D-печать, под заказ"],
+    badge: "Под заказ",
+    ozon: ""
+  },
+
   // ↑ новые товары добавлять выше этой строки
 ];
