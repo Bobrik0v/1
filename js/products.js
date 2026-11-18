@@ -197,5 +197,19 @@ window.PRODUCTS = [
     ozon: ""
   },
 
+  {
+    id: "derzhatel-gaykoverta-magnitnyy",
+    name: "Магнитный держатель пневмогайковёрта для СТО",
+    category: "Для мастерской",
+    photos: ["img/products/derzhatel-gaykoverta-magnitnyy/01.jpg", "img/products/derzhatel-gaykoverta-magnitnyy/02.jpg", "img/products/derzhatel-gaykoverta-magnitnyy/03.jpg", "img/products/derzhatel-gaykoverta-magnitnyy/04.jpg", "img/products/derzhatel-gaykoverta-magnitnyy/05.jpg"],
+    price: 70,
+    oldPrice: null,
+    priceFrom: false,
+    desc: "Держатель для пневмогайковёрта на двух магнитах — крепится на стойку подъёмника или любую металлическую поверхность, без сверления. Гайковёрт всегда под рукой, рядом гнёзда для двух длинных головок и место под отвёртку. Магниты в комплекте. Перед заказом пришлите фото или модель вашего гайковёрта — проверим, подойдёт ли посадка.",
+    specs: ["Крепление: 2 магнита (в комплекте)", "Куда: стойка подъёмника, верстак, любой металл", "Вмещает: гайковёрт, 2 головки, отвёртку", "Изготовление: 3D-печать, под заказ 2–3 дня"],
+    badge: "Под заказ",
+    ozon: ""
+  },
+
   // ↑ новые товары добавлять выше этой строки
 ];
