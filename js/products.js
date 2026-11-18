@@ -183,5 +183,19 @@ window.PRODUCTS = [
     ozon: ""
   },
 
+  {
+    id: "byd-song-plus-korpus-kamery",
+    name: "Корпус камеры заднего вида BYD Song Plus с форсункой омывателя",
+    category: "Автозапчасти",
+    photos: ["img/products/byd-song-plus-korpus-kamery/01.jpg", "img/products/byd-song-plus-korpus-kamery/02.jpg", "img/products/byd-song-plus-korpus-kamery/03.jpg", "img/products/byd-song-plus-korpus-kamery/04.jpg", "img/products/byd-song-plus-korpus-kamery/05.jpg"],
+    price: 50,
+    oldPrice: null,
+    priceFrom: false,
+    desc: "Корпус камеры заднего вида для BYD Song Plus — замена сломанного штатного. Проверен и установлен на автомобиль (последнее фото). В комплекте: корпус и форсунка омывателя камеры. Саму камеру переставляете со своей машины, шланг омывателя докупается отдельно. Установка — самостоятельно: форсунку при установке посадите на герметик, чтобы не подтекала под давлением омывайки.",
+    specs: ["Автомобиль: BYD Song Plus", "В комплекте: корпус + форсунка омывателя", "Не входит: камера, шланг", "Установка: самостоятельно, форсунка — на герметик", "Изготовление: 3D-печать, под заказ 2–3 дня"],
+    badge: "Под заказ",
+    ozon: ""
+  },
+
   // ↑ новые товары добавлять выше этой строки
 ];
