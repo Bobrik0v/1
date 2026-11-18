@@ -155,5 +155,19 @@ window.PRODUCTS = [
     ozon: ""
   },
 
+  {
+    id: "audi-a6-c6-kolpachok-diska",
+    name: "Колпачок на литой диск Audi A6 C6, 150 / 62,5 мм",
+    category: "Автозапчасти",
+    photos: ["img/products/audi-a6-c6-kolpachok-diska/01.jpg", "img/products/audi-a6-c6-kolpachok-diska/02.jpg"],
+    price: 40,
+    oldPrice: null,
+    priceFrom: false,
+    desc: "Колпачок-заглушка центрального отверстия литого диска Audi A6 C6. Защищает ступицу от грязи и реагентов, ставится без инструмента. Цена за 1 шт.",
+    specs: ["Автомобиль: Audi A6 C6", "Размер: 150 / 62,5 мм", "Цвет: серый", "Количество: 1 шт.", "Изготовление: 3D-печать, под заказ 2–3 дня", "Артикул: 914660715"],
+    badge: "Под заказ",
+    ozon: ""
+  },
+
   // ↑ новые товары добавлять выше этой строки
 ];
