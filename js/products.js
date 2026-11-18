@@ -47,5 +47,97 @@
 
 window.PRODUCTS = [
 
+  {
+    id: "opel-vectra-b-vstavki-ruchek",
+    name: "Вставки ручек дверных карт Opel Vectra B, комплект",
+    category: "Автозапчасти",
+    photos: ["img/products/opel-vectra-b-vstavki-ruchek/01.jpg", "img/products/opel-vectra-b-vstavki-ruchek/02.jpg", "img/products/opel-vectra-b-vstavki-ruchek/03.jpg", "img/products/opel-vectra-b-vstavki-ruchek/04.jpg", "img/products/opel-vectra-b-vstavki-ruchek/05.jpg"],
+    price: 150,
+    oldPrice: null,
+    priceFrom: false,
+    desc: "Комплект вставок (заглушек) в дверные карты Opel Vectra B — замена сломанным или потерянным. Печатаем из ASA: не деформируется летом в салоне и не выцветает на солнце, матовая поверхность как у заводского пластика. Ставятся на штатные места без доработок.",
+    specs: ["Автомобиль: Opel Vectra B", "Материал: ASA", "Цвет: чёрный, матовый", "Изготовление: 3D-печать, под заказ 2–3 дня", "Артикул: OVB-HANDLE-INS-01"],
+    badge: "Под заказ",
+    ozon: "https://ozon.ru/product/5027321094"
+  },
+  {
+    id: "volvo-v70-reshetka",
+    name: "Решётка радиатора Volvo V70 (под покраску)",
+    category: "Автозапчасти",
+    photos: ["img/products/volvo-v70-reshetka/01.jpg", "img/products/volvo-v70-reshetka/02.jpg", "img/products/volvo-v70-reshetka/03.jpg"],
+    price: 499,
+    oldPrice: null,
+    priceFrom: false,
+    desc: "Замена треснувшей или выцветшей решётки Volvo V70, которую сложно найти. Повторяет форму и крепления оригинала. Важно: деталь НЕ окрашена — поставляется в чёрном пластике, под покраску в цвет кузова или в чёрный мат/глянец. Перед покраской — лёгкая шлифовка и грунт по пластику.",
+    specs: ["Автомобиль: Volvo V70", "Покрытие: не окрашена, под покраску", "Вес: около 400 г", "Изготовление: 3D-печать, под заказ", "Артикул: VOLVO-V70-GR"],
+    badge: "Под заказ",
+    ozon: "https://ozon.ru/product/5396380069"
+  },
+  {
+    id: "peugeot-605-ramka-magnitoly",
+    name: "Рамка магнитолы Peugeot 605",
+    category: "Автозапчасти",
+    photos: ["img/products/peugeot-605-ramka-magnitoly/01.jpg", "img/products/peugeot-605-ramka-magnitoly/02.jpg", "img/products/peugeot-605-ramka-magnitoly/03.jpg"],
+    price: 119,
+    oldPrice: null,
+    priceFrom: false,
+    desc: "Рамка для установки магнитолы в Peugeot 605. Ставится на штатное место без доработок.",
+    specs: ["Автомобиль: Peugeot 605", "Изготовление: 3D-печать, под заказ 2–3 дня", "Артикул: PEG605RMK01"],
+    badge: "Под заказ",
+    ozon: "https://ozon.ru/product/5038456983"
+  },
+  {
+    id: "audi-a8-d4-shesterna-pechki",
+    name: "Шестерня актуатора заслонки печки Audi A8 D4",
+    category: "Автозапчасти",
+    photos: ["img/products/audi-a8-d4-shesterna-pechki/01.jpg", "img/products/audi-a8-d4-shesterna-pechki/02.jpg"],
+    price: 50,
+    oldPrice: null,
+    priceFrom: false,
+    desc: "Шестерня сервопривода заслонки отопителя Audi A8 D4 (2015). Чинит заклинившую или щёлкающую печку без покупки сервопривода в сборе. Печатаем из PA-CF — полиамида с углеволокном: прочный, износостойкий, не боится жары в отопителе. Перед заказом сравните вашу деталь с фото.",
+    specs: ["Автомобиль: Audi A8 D4 (2015)", "OEM-номер: 4H0820511", "Материал: PA-CF (полиамид с углеволокном)", "Изготовление: 3D-печать, под заказ 2–3 дня", "Артикул: GEAR-AUDI-A8D4-HTR"],
+    badge: "Под заказ",
+    ozon: "https://ozon.ru/product/5145367433"
+  },
+  {
+    id: "audi-a6-c6-kolpachok-diska",
+    name: "Колпачок на литой диск Audi A6 C6, 150 / 62,5 мм",
+    category: "Автозапчасти",
+    photos: ["img/products/audi-a6-c6-kolpachok-diska/01.jpg", "img/products/audi-a6-c6-kolpachok-diska/02.jpg"],
+    price: 65,
+    oldPrice: null,
+    priceFrom: false,
+    desc: "Колпачок-заглушка центрального отверстия литого диска Audi A6 C6. Защищает ступицу от грязи и реагентов, ставится без инструмента. Цена за 1 шт.",
+    specs: ["Автомобиль: Audi A6 C6", "Размер: 150 / 62,5 мм", "Цвет: серый", "Количество: 1 шт.", "Изготовление: 3D-печать, под заказ 2–3 дня", "Артикул: 914660715"],
+    badge: "Под заказ",
+    ozon: "https://ozon.ru/product/5397573853"
+  },
+  {
+    id: "bmw-e60-kreplenie-parktronika",
+    name: "Крепление парктроника BMW E60, бампер M-пакет (789596)",
+    category: "Автозапчасти",
+    photos: ["img/products/bmw-e60-kreplenie-parktronika/01.jpg", "img/products/bmw-e60-kreplenie-parktronika/02.jpg", "img/products/bmw-e60-kreplenie-parktronika/03.jpg", "img/products/bmw-e60-kreplenie-parktronika/04.jpg", "img/products/bmw-e60-kreplenie-parktronika/05.jpg", "img/products/bmw-e60-kreplenie-parktronika/06.jpg", "img/products/bmw-e60-kreplenie-parktronika/07.jpg", "img/products/bmw-e60-kreplenie-parktronika/08.jpg", "img/products/bmw-e60-kreplenie-parktronika/09.jpg"],
+    price: 20,
+    oldPrice: null,
+    priceFrom: false,
+    desc: "Крепление датчика парктроника для бампера M-пакета BMW E60. Держит датчик плотно, без люфта. Печатаем из ASA — прочный, не боится погоды. Ставится без доработок.",
+    specs: ["Автомобиль: BMW E60, бампер M-пакет", "OEM-номер: 789596", "Материал: ASA", "Количество: 1 шт.", "Изготовление: 3D-печать, под заказ 2–3 дня", "Артикул: 789596-BMW"],
+    badge: "Под заказ",
+    ozon: "https://ozon.ru/product/5613311432"
+  },
+  {
+    id: "airo-fw12025s-sharnir-shchetki",
+    name: "Ремкомплект шарнира щётки пылесоса AIRO FW12025S",
+    category: "Запчасти для техники",
+    photos: ["img/products/airo-fw12025s-sharnir-shchetki/01.jpg", "img/products/airo-fw12025s-sharnir-shchetki/02.jpg", "img/products/airo-fw12025s-sharnir-shchetki/03.jpg"],
+    price: 350,
+    oldPrice: null,
+    priceFrom: false,
+    desc: "Если сломался шарнир электрощётки — не нужно покупать новую щётку в сборе, достаточно заменить детали шарнира. Печатаем из PETG: ударопрочный, выдерживает постоянные нагрузки при уборке. Ставится на штатное место без клея. Перед заказом сравните вашу деталь с фото.",
+    specs: ["Подходит к: пылесос AIRO FW12025S", "Материал: PETG", "Изготовление: 3D-печать, под заказ 2–3 дня", "Артикул: KIT-AIRO-FW12025S"],
+    badge: "Под заказ",
+    ozon: "https://ozon.ru/product/5145589427"
+  },
+
   // ↑ новые товары добавлять выше этой строки
 ];
