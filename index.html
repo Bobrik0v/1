@@ -185,7 +185,7 @@
       <h2 class="section__title">Услуги</h2>
       <p class="section__subtitle">От готовой модели до изделия в руках — весь цикл в одном месте</p>
       <div class="grid grid--4">
-        <article class="card">
+        <a class="card card--link" href="#shop">
           <div class="card__icon">🖨️</div>
           <h3 class="card__title">3D-печать</h3>
           <p class="card__text">
@@ -193,31 +193,35 @@
             корпуса, крепления, игрушки, сувениры. От одной штуки до небольшой
             партии.
           </p>
-        </article>
-        <article class="card">
+          <span class="card__more">Готовые изделия →</span>
+        </a>
+        <a class="card card--link" href="#scan">
           <div class="card__icon">📐</div>
           <h3 class="card__title">3D-сканирование</h3>
           <p class="card__text">
             Отсканируем предмет или сломанную деталь и получим точную цифровую
             модель — чтобы напечатать копию или доработать её.
           </p>
-        </article>
-        <article class="card">
+          <span class="card__more">Примеры сканирования →</span>
+        </a>
+        <a class="card card--link" href="#scan">
           <div class="card__icon">🧊</div>
           <h3 class="card__title">3D-моделирование</h3>
           <p class="card__text">
             Создадим модель с нуля по чертежу, фото или образцу: недостающая
             запчасть, корпус, держатель, прототип вашей идеи.
           </p>
-        </article>
-        <article class="card">
+          <span class="card__more">Примеры моделирования →</span>
+        </a>
+        <a class="card card--link" href="#repair">
           <div class="card__icon">🔧</div>
           <h3 class="card__title">Ремонт бытовой техники</h3>
           <p class="card__text">
             Ремонтируем мелкую бытовую технику, в том числе с печатью
             недостающих и сломанных деталей, которые уже не купить.
           </p>
-        </article>
+          <span class="card__more">Условия и примеры →</span>
+        </a>
       </div>
     </div>
   </section>
@@ -307,6 +311,60 @@
         резьбовыми вставками под крепёж.
         <a href="#contact">Пришлите фото вашей детали</a> — подскажем, можно ли
         напечатать, и бесплатно посчитаем стоимость.
+      </p>
+    </div>
+  </section>
+
+  <!-- Сканирование и моделирование: примеры -->
+  <section class="section" id="scan">
+    <div class="container">
+      <h2 class="section__title">3D-сканирование и моделирование</h2>
+      <p class="section__subtitle">
+        Сканируем деталь лазерным 3D-сканером Creality Raptor Pro и строим по скану
+        точную 3D-модель — чтобы напечатать копию, доработать или восстановить
+        сломанное.
+      </p>
+      <div class="auto-gallery">
+        <figure class="auto-photo">
+          <img src="img/scan/volvo-kollektor-skan-1.webp"
+               alt="3D-сканирование впускного коллектора Volvo лазерным сканером Creality Raptor Pro"
+               loading="lazy" width="720" height="1280">
+          <figcaption>Впускной коллектор Volvo: сканируем лазерным сканером Creality Raptor Pro</figcaption>
+        </figure>
+        <figure class="auto-photo">
+          <img src="img/scan/volvo-kollektor-skan-2.webp"
+               alt="Сканирование коллектора Volvo: метки на подложке и лазерные линии сканера"
+               loading="lazy" width="720" height="1280">
+          <figcaption>Метки на подложке помогают сканеру точно сшить деталь со всех сторон</figcaption>
+        </figure>
+        <figure class="auto-photo">
+          <img src="img/scan/volvo-kollektor.webp"
+               alt="Впускной коллектор Volvo — деталь, по которой построена 3D-модель"
+               loading="lazy" width="720" height="1280">
+          <figcaption>Коллектор Volvo — по скану построена 3D-модель детали</figcaption>
+        </figure>
+        <figure class="auto-photo">
+          <img src="img/volvo-v70-skanirovanie.jpg"
+               alt="3D-сканирование решётки радиатора Volvo V70 лазерным сканером Creality Raptor Pro"
+               loading="lazy" width="607" height="1080">
+          <figcaption>Решётка радиатора Volvo V70: скан потрескавшегося оригинала</figcaption>
+        </figure>
+        <figure class="auto-photo">
+          <img src="img/volvo-v70-reshetka-skan.jpg"
+               alt="Цифровая копия решётки радиатора Volvo V70 после 3D-сканирования"
+               loading="lazy" width="608" height="1080">
+          <figcaption>Готовая цифровая копия — облако из 10,8 млн точек</figcaption>
+        </figure>
+        <figure class="auto-photo">
+          <img src="img/volvo-v70-reshetka-do-posle.jpg"
+               alt="Решётка радиатора Volvo V70: старый оригинал и новая деталь, смоделированная по скану и напечатанная"
+               loading="lazy" width="607" height="1080">
+          <figcaption>Итог: по скану смоделировали и напечатали новую решётку</figcaption>
+        </figure>
+      </div>
+      <p class="materials__note">
+        Нет чертежа или модели — не проблема. <a href="#contact">Пришлите фото детали</a>
+        или привезите её — подскажем, можно ли отсканировать и сделать копию.
       </p>
     </div>
   </section>
@@ -904,6 +962,7 @@
         <a href="#shop">Товары</a>
         <a href="#auto">Автозапчасти</a>
         <a href="#repair">Ремонт техники</a>
+        <a href="#scan">Сканирование</a>
         <a href="#equipment">Оборудование</a>
         <a href="#materials">Материалы</a>
         <a href="#pricing">Цены</a>
