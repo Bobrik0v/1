@@ -30,6 +30,19 @@ const success = document.getElementById('formSuccess');
 const errorMsg = document.getElementById('formError');
 const submitBtn = form.querySelector('button[type="submit"]');
 
+// Тип заявки: поля «Печать по готовой модели» показываем только для этого варианта.
+// Скрытые поля отключаем — тогда они не попадают в письмо.
+const modelFields = document.getElementById('modelFields');
+function syncRequestType() {
+  const checked = form.querySelector('input[name="Тип заявки"]:checked');
+  const isModel = checked && checked.value === 'Печать по готовой модели';
+  modelFields.hidden = !isModel;
+  modelFields.querySelectorAll('input').forEach((f) => (f.disabled = !isModel));
+  document.getElementById('messageTitle').textContent = isModel ? 'Комментарий (необязательно)' : 'Что нужно сделать?';
+}
+form.querySelectorAll('input[name="Тип заявки"]').forEach((r) => r.addEventListener('change', syncRequestType));
+syncRequestType();
+
 // Если JavaScript выключен, форма уходит обычным POST и сервис
 // возвращает посетителя на сайт с ?sent=1 — показываем «спасибо»
 if (new URLSearchParams(window.location.search).has('sent')) {
@@ -67,7 +80,8 @@ form.addEventListener('submit', async (e) => {
     if (!json.success) throw new Error(json.message);
 
     success.hidden = false;
-    form.querySelectorAll('input:not([type="hidden"]), textarea').forEach((f) => (f.value = ''));
+    form.reset();
+    syncRequestType();
     document.dispatchEvent(new Event('order:sent'));
   } catch (err) {
     errorMsg.hidden = false;

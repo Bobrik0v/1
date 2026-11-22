@@ -1355,3 +1355,51 @@ body.is-locked { overflow: hidden; }
 .card--link:hover .card__more {
   text-decoration: underline;
 }
+
+/* Тип заявки и поля «Печать по готовой модели» */
+.form__type {
+  border: 0;
+  padding: 0;
+  margin: 0 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.form__type legend {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 7px;
+  padding: 0;
+}
+.form__type-opt {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s;
+}
+.form__type-opt input {
+  accent-color: var(--accent);
+  margin: 0;
+}
+.form__type-opt:has(input:checked) {
+  border-color: var(--accent);
+  background: rgba(124, 140, 255, 0.1);
+}
+.form__model[hidden] {
+  display: none;
+}
+.form__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+@media (max-width: 640px) {
+  .form__row {
+    grid-template-columns: 1fr;
+  }
+}
