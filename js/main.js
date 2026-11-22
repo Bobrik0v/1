@@ -34,13 +34,13 @@ const submitBtn = form.querySelector('button[type="submit"]');
 // Скрытые поля отключаем — тогда они не попадают в письмо.
 const modelFields = document.getElementById('modelFields');
 function syncRequestType() {
-  const checked = form.querySelector('input[name="Тип заявки"]:checked');
+  const checked = form.querySelector('input[name="request_type"]:checked');
   const isModel = checked && checked.value === 'Печать по готовой модели';
   modelFields.hidden = !isModel;
   modelFields.querySelectorAll('input').forEach((f) => (f.disabled = !isModel));
   document.getElementById('messageTitle').textContent = isModel ? 'Комментарий (необязательно)' : 'Что нужно сделать?';
 }
-form.querySelectorAll('input[name="Тип заявки"]').forEach((r) => r.addEventListener('change', syncRequestType));
+form.querySelectorAll('input[name="request_type"]').forEach((r) => r.addEventListener('change', syncRequestType));
 syncRequestType();
 
 // Если JavaScript выключен, форма уходит обычным POST и сервис
