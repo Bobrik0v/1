@@ -936,8 +936,29 @@
           <label for="phone">Телефон</label>
           <input type="tel" id="phone" name="phone" placeholder="+375 (__) ___-__-__" required>
         </div>
+        <fieldset class="form__type">
+          <legend>Тип заявки</legend>
+          <label class="form__type-opt"><input type="radio" name="Тип заявки" value="Ремонт, моделирование или вопрос" checked> Ремонт, моделирование или вопрос</label>
+          <label class="form__type-opt"><input type="radio" name="Тип заявки" value="Печать по готовой модели"> Печать по готовой модели</label>
+        </fieldset>
+        <div class="form__model" id="modelFields">
+          <div class="form__group">
+            <label for="modelLink">Ссылка на модель <span class="form__hint">Thingiverse, Printables, облако — или напишите «пришлю файл в Viber/Telegram»</span></label>
+            <input type="text" id="modelLink" name="Ссылка на модель" placeholder="https://www.printables.com/model/…">
+          </div>
+          <div class="form__row">
+            <div class="form__group">
+              <label for="modelSize">Размеры, мм</label>
+              <input type="text" id="modelSize" name="Размеры, мм" placeholder="100 × 50 × 30 или «как в модели»">
+            </div>
+            <div class="form__group">
+              <label for="modelQty">Сколько штук</label>
+              <input type="number" id="modelQty" name="Количество, шт" min="1" step="1" placeholder="1">
+            </div>
+          </div>
+        </div>
         <div class="form__group">
-          <label for="message">Что нужно сделать? <span class="form__hint">Фото удобнее прислать в Viber или Telegram — кнопки «Отправить фото» рядом</span></label>
+          <label for="message"><span id="messageTitle">Что нужно сделать?</span> <span class="form__hint">Фото удобнее прислать в Viber или Telegram — кнопки «Отправить фото» рядом</span></label>
           <textarea id="message" name="message" rows="4" placeholder="Например: напечатать шестерёнку для кухонного комбайна, модели нет — есть сломанная деталь"></textarea>
         </div>
         <input type="hidden" name="access_key" value="539d6977-8d9d-43ea-8d23-db8ddb601214">
