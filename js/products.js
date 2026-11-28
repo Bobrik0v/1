@@ -229,7 +229,7 @@ window.PRODUCTS = [
     id: "nakladka-ptf",
     name: "Накладка ПТФ с ДХО Citroën C3 Picasso рестайлинг (2012–2017)",
     category: "Автозапчасти",
-    photos: ["img/products/nakladka-ptf/01.jpg", "img/products/nakladka-ptf/02.jpg", "img/products/nakladka-ptf/03.jpg"],
+    photos: ["img/products/nakladka-ptf/01.jpg", "img/products/nakladka-ptf/02.jpg", "img/products/nakladka-ptf/04.jpg"],
     price: 250,
     oldPrice: null,
     priceFrom: false,
